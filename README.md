@@ -33,3 +33,28 @@ To make python file, type:
 To run python program, type:
 
 <pre><code>python3 filename.py</code></pre>
+
+## Intro to IOT
+
+1. We will be using IOTstack. So Firstly update and upgrade your s ystem.
+
+   <pre><code>sudo apt update
+   sudo apt upgrade -y</code></pre>
+
+   Before we install IOTstack, we install dependencies of Hassio,
+   <pre><code>sudo apt install -y apparmor apparmor-profiles apparmor-utils
+   sudo apt install -y software-properties-common apt-transport-https ca-certificates dbus</code></pre>
+
+   Install Network-Manager
+   <pre><code>sudo vi /etc/NetworkManager/NetworkManager.conf</code></pre>
+
+2. To install IOTstack
+   <pre><code>curl -fsSL https://raw.githubusercontent.com/SensorsIot/IOTstack/master/install.sh | bash</code></pre>
+
+   And then reboot the system.
+
+3. Run the menu and choose your containers:
+   <pre><code>cd ~/IOTstack
+   ./menu.sh</code></pre>
+4. Bring up your stack:
+   <pre><code>docker-compose up -d</code></pre>
