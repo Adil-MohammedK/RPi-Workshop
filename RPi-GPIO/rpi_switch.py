@@ -3,7 +3,7 @@ import time
 # Configure the Pi to use the BCM (Broadcom) pin names, rather than the pin pos$
 GPIO.setmode(GPIO.BCM)
 
-switch_pin = 23
+switch_pin = 12
 
 GPIO.setup(switch_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 

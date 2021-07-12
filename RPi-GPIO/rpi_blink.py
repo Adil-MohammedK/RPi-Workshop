@@ -4,7 +4,7 @@ import time
 # Configure the Pi to use the BCM (Broadcom) pin names, rather than the pin positions
 GPIO.setmode(GPIO.BCM)
 
-led_pin = 18
+led_pin = 8
 
 GPIO.setup(led_pin, GPIO.OUT)
 
