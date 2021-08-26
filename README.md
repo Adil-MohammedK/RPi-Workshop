@@ -159,9 +159,12 @@ Create docker-compose file and build it.
 version: '3.3'
 services:
     shairport-sync:
+        container_name: shairplay
         restart: unless-stopped
         network_mode: host
         devices:
             - /dev/snd
         image: mikebrady/shairport-sync
+        volumes:
+            - /etc/shairport-sync.conf:/etc/shairport-sync.conf
 </code></pre>
